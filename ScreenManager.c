@@ -156,7 +156,7 @@ static void ScreenManager_drawPanels(ScreenManager* this, int focus) {
 }
 
 static Panel* setCurrentPanel(Panel* panel) {
-   FunctionBar_draw(panel->currentBar, NULL);
+   //FunctionBar_draw(panel->currentBar, NULL);
    return panel;
 }
 
