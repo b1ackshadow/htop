@@ -27,7 +27,7 @@ bool staticData;
 } FunctionBar;
 
 }*/
-
+bool FunctionBar_hide = false;
 static const char* const FunctionBar_FKeys[] = {"F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", NULL};
 
 static const char* const FunctionBar_FLabels[] = {"      ", "      ", "      ", "      ", "      ", "      ", "      ", "      ", "      ", "      ", NULL};
@@ -101,8 +101,10 @@ void FunctionBar_draw(const FunctionBar* this, char* buffer) {
 }
 
 void FunctionBar_drawAttr(const FunctionBar* this, char* buffer, int attr) {
-    mvhline(LINES-1, 0, ' ', COLS);
-    return;
+    if (FunctionBar_hide) {
+        mvhline(LINES-1, 0, ' ', COLS);
+        return;
+    }
     attrset(CRT_colors[FUNCTION_BAR]);
     mvhline(LINES-1, 0, ' ', COLS);
     int x = 0;

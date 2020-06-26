@@ -364,6 +364,7 @@ FunctionBar_FLabels	FunctionBar.c	/^static const char* const FunctionBar_FLabels
 FunctionBar_delete	FunctionBar.c	/^void FunctionBar_delete(FunctionBar* this) {$/;"	f	typeref:typename:void
 FunctionBar_draw	FunctionBar.c	/^void FunctionBar_draw(const FunctionBar* this, char* buffer) {$/;"	f	typeref:typename:void
 FunctionBar_drawAttr	FunctionBar.c	/^void FunctionBar_drawAttr(const FunctionBar* this, char* buffer, int attr) {$/;"	f	typeref:typename:void
+FunctionBar_hide	FunctionBar.c	/^bool FunctionBar_hide = false;$/;"	v	typeref:typename:bool
 FunctionBar_new	FunctionBar.c	/^FunctionBar* FunctionBar_new(const char* const* functions, const char* const* keys, const int* e/;"	f	typeref:typename:FunctionBar *
 FunctionBar_newEnterEsc	FunctionBar.c	/^FunctionBar* FunctionBar_newEnterEsc(const char* enter, const char* esc) {$/;"	f	typeref:typename:FunctionBar *
 FunctionBar_setLabel	FunctionBar.c	/^void FunctionBar_setLabel(FunctionBar* this, int event, const char* text) {$/;"	f	typeref:typename:void
