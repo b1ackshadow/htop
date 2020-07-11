@@ -197,7 +197,7 @@ static bool Settings_read(Settings* this, const char* fileName) {
         } else if (String_eq(option[0], "tree_view")) {
             this->treeView = atoi(option[1]);
         } else if (String_eq(option[0], "hide_function_bar")) {
-            FunctionBar_hide = atoi(option[1]);
+            this->FunctionBar_hide = atoi(option[1]);
         } else if (String_eq(option[0], "hide_threads")) {
             this->hideThreads = atoi(option[1]);
         } else if (String_eq(option[0], "hide_kernel_threads")) {
